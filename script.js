@@ -209,7 +209,7 @@ function genFilter(anchor) {
 
 function chooseMatchingCard(isRight, instructions, grid) {
 	if (isRight) {
-		difficulty += 0.1
+		difficulty += 0.3
 		genCards(instructions, grid, difficulty)
 	} else {
 		removeHeart()
