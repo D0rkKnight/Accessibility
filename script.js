@@ -140,8 +140,8 @@ function genCards(instructions, grid, difficulty) {
 	//Begin by generating an anchor and basing all variation off of that
 	const anchor = {
 		invert: Math.random() * 50,
-		sepia: 70 + Math.random() * 500,
-		saturate: 200 + Math.random() * 200,
+		sepia: 200 + Math.random() * 100,
+		saturate: 200 + Math.random() * 100,
 		contrast: 100 + Math.random() * 50,
 		'hue-rotate': Math.floor(Math.random() * 1440),
 		'drop-shadow': genColor()
