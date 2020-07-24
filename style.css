@@ -1,0 +1,110 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: "Courier New", Courier, monospace;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #333;
+}
+
+#container {
+	width: 800px;
+	max-width: 80%;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 2px;
+
+	position: relative;
+}
+
+.btnGrid {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.btn {
+	background-color: hsl(200, 100%, 50%);
+	border: 1px solid hsl(200, 100%, 30%);
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: white;
+	outline: none;
+}
+
+.btn:hover {
+	border-color: black;
+}
+
+#matchingGame {
+	width: 100%;
+	height: 500px;
+
+	overflow: auto;
+}
+
+#gameGrid {
+	margin-top: 20px;
+
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+#instructions {
+	text-align: center;
+	position: relative;
+
+	background-color: #DDD;
+	padding: 15px;
+
+	border-radius: 5px;
+}
+
+#instructionsText {
+	position: absolute;
+
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.matchingCard {
+	width: 100px;
+	height: 100px;
+
+	image-rendering: pixelated;
+}
+
+#overhead {
+	position: absolute;
+	top: -70px;
+	width: 100%;
+	height: 50px;
+
+	display: flex;
+
+	left: 50%;
+	transform: translateX(-50%);
+
+	justify-content: center;
+	gap: 5px;
+
+}
+
+.heartIcon {
+	height: 50px;
+	width: 50px;
+
+	image-rendering: pixelated;
+}
