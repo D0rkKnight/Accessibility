@@ -19,7 +19,7 @@ function init() {
 
 function startGame() {
 	state = {}
-	showTextNode(2)
+	showTextNode(7)
 }
 
 function showTextNode(textNodeIndex) {
@@ -295,7 +295,18 @@ const textNodes = [
 	},
 	{
 		id: 6,
-		text: 'GAME OVER'
+		text: 'You bought too many wrong peppers. Dejected, you go home and eat a tub of ice cream.',
+		options: []
+	},
+	{
+		id: 7,
+		text: 'You are buying bell peppers. Your recipe demands a very specific kind of bell pepper, so you are looking carefully for your desired pepper.',
+		options: [
+			{
+				text: 'Begin shopping',
+				nextText: 3
+			}
+		]
 	}
 ]
 
